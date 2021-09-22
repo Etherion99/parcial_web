@@ -1,0 +1,17 @@
+.color-main{
+    color: #17A2B7;
+}
+
+.color-white{
+    color: white;
+}
+
+.bgc-main{
+    background-color: #17A2B7;
+}
+
+#main-container{
+    width: 100vw;
+    height: 100vh;   
+}   
+
