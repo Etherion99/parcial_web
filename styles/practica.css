@@ -1,0 +1,45 @@
+#main-container{
+    background-color: #E8ECEF;
+}
+
+.bgc-green{
+    background-color: #27A844;
+}
+
+.color-white{
+    color: white;
+}
+
+*{
+    color: #6F747C;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-group .form-control{
+    border-right: none;
+}
+
+.input-group-text{
+    background-color: transparent;
+    border-left: none;
+}
+
+.input-group-green .input-group-text{
+    color: #27A844;
+    border-color: #27A844;
+    border-left-width: 2px;
+    border-style: solid;
+}
+
+.input-group-green .input-group-text:hover{
+    background-color: #27A844;
+    color: white;
+}
+
+.link{
+    text-decoration: none;
+    color: #6398D7;
+    font-weight: bold;
+}
+
+

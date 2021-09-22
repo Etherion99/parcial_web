@@ -5,8 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parte práctica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles/practica.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="scripts/practica.js" defer></script>
 </head>
 <body>
-    
+    <div class="vw-100 vh-100" id="main-container">
+        <div class="container-fluid h-100 col row px-0 mx-0 justify-content-center align-items-center">            
+            <div class="col-4 h-75 d-flex flex-column">
+                <div class="row mb-3">
+                    <h1 class="text-center"><strong style="color: #4C5761;">Web</strong>Developer</h1>
+                </div>
+                <div class="card col p-5">
+                    <h4 class="text-center mb-5">formulario de afiliación</h4>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Nombre completo" name="name" id="name">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email" name="email" id="email">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="text" name="phone" id="phone">
+                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                    </div>
+                    <div class="input-group input-group-green mb-3">
+                        <input type="text" class="form-control" name="gusto" id="gusto">
+                        <button class="input-group-text" onclick="addGusto()">Gustos</button>
+                    </div>
+                    <div class="card p-2 mb-5">
+                        <div class="row px-0 mx-0">
+                            <div class="col-3 py-3 px-1 text-center">
+                                <span class="bgc-green py-3 px-4 fs-1 col-3 text-center rounded">
+                                    <i class="far fa-flag color-white"></i>
+                                </span>
+                            </div>
+                            <div class="col-9" id="gustos-tabla">
+                                <div class="row">
+                                    <div class="col px-0 mx-0">
+                                        <div class="border p-3">
+                                            <strong>Gusto</strong>
+                                        </div>
+                                    </div>
+                                    <div class="col px-0 mx-0">
+                                        <div class="border p-3">
+                                            <span>%</span>
+                                        </div>
+                                    </div>
+                                    <div class="col px-0 mx-0">
+                                        <div class="border p-3">
+                                            <strong>edit</strong>
+                                        </div>
+                                    </div>
+                                </div>                                 
+                            </div>                                                       
+                        </div>
+                    </div> 
+                    <div>
+                        <a href="https://sites.google.com/view/dweb1-uis" target="_blank" class="link">Ir a Site de P web</a>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
