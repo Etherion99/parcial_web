@@ -1,7 +1,9 @@
 let rows = 1;
+let editing = 0;
 
 function addGusto(){
     let gusto = $('#gusto').val();
+    $('#gusto').val('');
 
     $('#gustos-tabla').append(
         $('<div>', {
@@ -68,18 +70,41 @@ function addGusto(){
     );
 
     $('#row-' + rows + ' a').click(function(){
-        let row = $(this).data('row')
+        let row = $(this).data('row');
+        editing = row;
         
         $('#row-' + row + ' .view').fadeOut(function(){
             $('#row-' + row + ' .edit').fadeIn();
         });
 
-        displayControls();
+        $('#controls').fadeIn();
     })
     
     rows++;
 }
 
-function displayControls(){
-    alert('fdf');
+function clearAll(){
+    console.log('ff');
+    $('#name').val('');
+    $('#email').val('');
+    $('#phone').val('');
+    $('#gusto').val('');
+
+    $('#gustos-tabla .row:not(:first-of-type)').remove();
+}
+
+function accept(){
+    let data = {
+        name: $('#name').val() != undefined ? $('#name').val() : '',
+        email: $('#email').val() != undefined ? $('#email').val() : '',
+        phone: $('#phone').val() != undefined ? $('#phone').val() : '',
+        gusto: $('#gusto-' + editing).val() != undefined ? $('#gusto-' + editing).val() : '',
+        perc: $('#perc-' + editing).val() != undefined ? $('#perc-' + editing).val() : ''
+    };
+
+    let params = new URLSearchParams(data).toString();
+
+    console.log(params)
+
+    window.location = 'resultados.html?' + params;
 }

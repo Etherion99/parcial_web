@@ -1,0 +1,37 @@
+.card-header{
+    background-color: #0E95B8;
+}
+
+#name{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.title{
+    color: #0E95B8;
+    font-size: 1.5rem;
+}
+
+.card-body{
+    background-color: #F7F7F7;
+}
+
+.email-container{
+    background-color: #007AFC;
+    color: white; 
+}
+
+.phone-container{
+  background-color: #0E95B8;
+  color: white;     
+}
+
+.gusto-container{
+   background-color: #29A544; 
+   color: white;  
+}
+
+.perc-container{
+   background-color: #DC3544; 
+   color: white;
+}
